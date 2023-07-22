@@ -4,3 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+
+header {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
