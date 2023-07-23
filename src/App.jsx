@@ -1,20 +1,14 @@
 import "./App.css";
-
+import Filter from "./components/Filter/Filter";
 import ListPage from "./components/ListPage/ListPage";
 import Search from "./components/Search/Search";
 
 function App() {
-  // useEffect(() => {
-  //   axios
-  //     .get("./data/warehouse.json")
-  //     .then((res) => setData(res))
-  //     .catch((err) => console.log(err));
-  // }, []);
-
   return (
     <div>
       <header>WAREHOUSES DATABASE</header>
       <Search />
+      <Filter />
       <ListPage />
     </div>
   );

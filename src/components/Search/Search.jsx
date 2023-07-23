@@ -1,35 +1,18 @@
-import { useState } from "react";
-
-import warehouseData from "../../data/warehouse.json";
+import { useContext } from "react";
+import { AppContext } from "../../context/appContext";
+import "./Search.css";
 
 const Search = () => {
-  const [search, setSearch] = useState("");
-  const [searchedData, setSearchedData] = useState([]);
-
-  function changeSearch(newSearch) {
-    setSearch(newSearch);
-  }
-
-  function changeSearchedData() {
-    const searchResults = warehouseData.filter(
-      (data) =>
-        data.name.toLowerCase().includes(search.toLowerCase()) ||
-        data.gender.toLowerCase().includes(search.toLowerCase())
-    );
-
-    setSearchedData(searchResults);
-  }
-
-  
+  const { search, changeSearch } = useContext(AppContext);
 
   return (
     <>
-      <div>
+      <div className="search-bar">
         <input
           className="search-box"
           type="text"
           onChange={(e) => changeSearch(e.target.value)}
-          placeholder="Search by the name, type, color ... "
+          placeholder="Search here"
           value={search}
         />
       </div>
