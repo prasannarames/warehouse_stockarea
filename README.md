@@ -3,6 +3,7 @@
 - React-router
 - css, html
 - useContext
+- vite
 
 ### Task Instructions
 ### The Assignment consists of two pages.
