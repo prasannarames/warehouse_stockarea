@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../../context/appContext";
 import warehouseData from "../../data/warehouse.json";
+import "./Filter.css";
 
 const Filter = () => {
   const { handleItemChange, resetFilter } = useContext(AppContext);

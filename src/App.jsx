@@ -1,15 +1,18 @@
 import "./App.css";
-import Filter from "./components/Filter/Filter";
+
 import ListPage from "./components/ListPage/ListPage";
-import Search from "./components/Search/Search";
+
+import { Route, Routes } from "react-router-dom";
+import WarehouseDetail from "./components/WarehouseDetailPage/WarehouseDetail";
 
 function App() {
   return (
     <div>
-      <header>WAREHOUSES DATABASE</header>
-      <Search />
-      <Filter />
-      <ListPage />
+  
+      <Routes>
+        <Route path="/" element={<ListPage />} />
+        <Route path="/item/:itemId" element={<WarehouseDetail />} />
+      </Routes>
     </div>
   );
 }
