@@ -5,6 +5,8 @@
 - useContext
 - vite
 
+### -> [live-link](https://warehouse-stockarea.vercel.app/)
+
 ### Task Instructions
 ### The Assignment consists of two pages.
 

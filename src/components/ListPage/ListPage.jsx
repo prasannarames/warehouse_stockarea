@@ -201,6 +201,15 @@ const ListPage = () => {
           )}
         </table>
       </div>
+      <h3>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/prasannarames/warehouse_stockarea"
+        >
+          source
+        </a>
+      </h3>
     </div>
   );
 };
