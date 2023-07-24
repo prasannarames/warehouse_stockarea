@@ -45,47 +45,47 @@ const ListPage = () => {
             <tbody>
               {searchedData.map((listData, i) => (
                 <tr key={i}>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>
                       {listData.id}
                     </Link>
                   </td>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>
                       {listData.name}
                     </Link>
                   </td>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>
                       {listData.code}
                     </Link>
                   </td>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>
                       {listData.city}
                     </Link>
                   </td>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>
                       {listData.space_available}
                     </Link>
                   </td>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>
                       {listData.type}
                     </Link>
                   </td>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>
                       {listData.cluster}
                     </Link>
                   </td>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>{`${
                       listData.is_registered ? "Yes" : "No"
                     }`}</Link>
                   </td>
-                  <td>
+                  <td className="search-results">
                     <Link className="link" to={`/item/${listData.id}`}>{`${
                       listData.is_live ? "Yes" : "No"
                     }`}</Link>

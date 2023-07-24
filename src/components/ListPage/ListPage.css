@@ -26,3 +26,6 @@ tr:nth-child(even) {
   all: unset;
   cursor: pointer;
 }
+.search-results {
+  background-color: lightcoral;
+}
